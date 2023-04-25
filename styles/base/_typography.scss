@@ -1,0 +1,21 @@
+h1 {
+	font-size: var(--fs-900);
+	line-height: 1.1;
+}
+
+h2 {
+	line-height: 1.15;
+}
+
+h3 {
+	line-height: 1.2;
+}
+
+a {
+	color: hsl(var(--clr-primary-900));
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
