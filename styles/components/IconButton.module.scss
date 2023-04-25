@@ -1,0 +1,19 @@
+@use "../utils/" as *;
+
+// ==================== Button with Icon ==================== //
+.button {
+	color: hsl(var(--clr-neutral-900));
+	width: rem(50);
+	aspect-ratio: 1;
+	padding: rem(8);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&:hover,
+	&:focus {
+		background-color: hsl(var(--clr-neutral-100));
+		box-shadow: var(--shadow-100);
+	}
+}

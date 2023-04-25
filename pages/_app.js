@@ -1,12 +1,15 @@
 import { Oswald } from "next/font/google";
-import "@/components/styles/globals.css";
+import { IconContext } from "react-icons/lib/esm/iconContext";
+import "@/styles/styles.scss";
 
 const oswald = Oswald({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }) {
 	return (
 		<div className={oswald.className}>
-			<Component {...pageProps} />
+			<IconContext.Provider value={{ size: 34 }}>
+				<Component {...pageProps} />
+			</IconContext.Provider>
 		</div>
 	);
 }

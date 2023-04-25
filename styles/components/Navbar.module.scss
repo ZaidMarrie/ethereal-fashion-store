@@ -1,0 +1,28 @@
+@use "../utils/" as *;
+
+// ==================== Navigation Bar ==================== //
+.nav {
+	position: relative;
+	padding-block: var(--space-400);
+	box-shadow: var(--shadow-300);
+
+	& > div {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		margin-left: 0;
+
+		@include breakpoint(small) {
+			margin-left: rem(54);
+		}
+	}
+
+	&__iconsGroup {
+		display: flex;
+		gap: rem(4);
+	}
+}
