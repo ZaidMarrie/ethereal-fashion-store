@@ -2,11 +2,14 @@
 
 // ==================== Navigation Bar ==================== //
 .nav {
-	position: relative;
 	padding-block: var(--space-400);
+	background-color: hsl(var(--clr-neutral-50));
 	box-shadow: var(--shadow-300);
+	overflow: auto;
 
-	& > div {
+	&__wrapper {
+		width: min(100% - 2.125rem, 80.625rem);
+		margin-inline: auto;
 		position: relative;
 		display: flex;
 		align-items: center;
@@ -24,5 +27,93 @@
 	&__iconsGroup {
 		display: flex;
 		gap: rem(4);
+	}
+}
+
+// Navigation Menu
+.menu {
+	--padding-inline: min(1rem + 6vw, 4.6875rem);
+
+	width: 100%;
+	height: 100vh;
+	background-color: hsl(var(--clr-neutral-100));
+	display: flex;
+	gap: rem(20);
+	flex-direction: column;
+	position: absolute;
+	inset: 0 0 0 0;
+	z-index: 2;
+	transform: translateX(-100vw);
+	transition: transform 200ms ease-in-out;
+
+	&[aria-expanded="true"] {
+		transform: translateX(0);
+	}
+
+	// Menu Overlay
+	&::after {
+		content: "";
+		width: 30vw;
+		background-color: hsl(var(--clr-neutral-900) / 0.35);
+		position: absolute;
+		inset: 0 0 0 auto;
+		transform: translateX(100%);
+	}
+
+	@include breakpoint(medium) {
+		width: 70vw;
+	}
+
+	// Menu Lists (ul's)
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__header,
+	&__link,
+	&__footer,
+	.footer__link {
+		display: flex;
+		align-items: center;
+	}
+
+	&__header,
+	&__footer,
+	&__link {
+		background-color: hsl(var(--clr-neutral-50));
+	}
+
+	&__header,
+	&__footer {
+		justify-content: space-between;
+		padding: var(--space-400) var(--padding-inline);
+	}
+
+	&__link,
+	.footer__link {
+		font-weight: 600;
+		color: hsl(var(--clr-neutral-900));
+		text-decoration: none;
+		gap: 0.5rem;
+	}
+
+	&__link {
+		width: 100%;
+		padding: rem(4) var(--padding-inline);
+		box-shadow: var(--shadow-100);
+
+		&:hover,
+		&:focus {
+			background-color: hsl(var(--clr-primary-200));
+		}
+	}
+
+	&__footer {
+		margin-top: auto;
+		padding-block: rem(12);
+		flex-wrap: wrap;
+		gap: 0.5rem;
 	}
 }

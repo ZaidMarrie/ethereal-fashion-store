@@ -1,17 +1,34 @@
 import Link from "next/link";
 import IconButton from "../global/IconButton";
 import Logo from "../global/Logo";
+import NavMenu from "./NavMenu";
+import CartModal from "./CartModal";
+import AccountModal from "./AccountModal";
 import { useState } from "react";
 import { MdOutlineAccountCircle, MdOutlineShoppingBag } from "react-icons/md";
 import styles from "@/styles/components/Navbar.module.scss";
 
 function Navbar() {
 	const [menuExpanded, setMenuExpanded] = useState(false);
+	const [accountExpanded, setAccountExpanded] = useState(false);
+	const [cartExpanded, setCartExpanded] = useState(false);
+
+	const toggleMenu = () => {
+		setMenuExpanded((prevState) => !prevState);
+	};
+
+	const toggleAccount = () => {
+		setAccountExpanded((prevState) => !prevState);
+	};
+
+	const toggleCart = () => {
+		setCartExpanded((prevState) => !prevState);
+	};
 
 	return (
 		<nav className={styles.nav}>
-			<div className="container">
-				<IconButton srText="Menu">
+			<div className={styles.nav__wrapper}>
+				<IconButton srText="Menu" elementId="navMenu" clickHandler={toggleMenu}>
 					<svg
 						width="34"
 						height="34"
@@ -31,17 +48,22 @@ function Navbar() {
 				</Link>
 
 				<div className={styles.nav__iconsGroup}>
-					<Link href="/account">
-						<IconButton srText="My Account">
-							<MdOutlineAccountCircle />
-						</IconButton>
-					</Link>
+					<IconButton srText="My Account" elementId="accountModal">
+						<MdOutlineAccountCircle />
+					</IconButton>
 
-					<IconButton srText="My Cart">
+					<IconButton srText="My Cart" elementId="cartModal">
 						<MdOutlineShoppingBag />
 					</IconButton>
 				</div>
 			</div>
+
+			<NavMenu isMenuExpanded={menuExpanded} clickHandler={toggleMenu} />
+			<AccountModal
+				isAccountExpanded={accountExpanded}
+				clickHandler={toggleAccount}
+			/>
+			<CartModal isCartExpanded={cartExpanded} clickHandler={toggleCart} />
 		</nav>
 	);
 }
