@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function SwimwearPage() {
-	return <div>SwimwearPage</div>;
+	return <Layout>SwimwearPage</Layout>;
 }
 
 export default SwimwearPage;

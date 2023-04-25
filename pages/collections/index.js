@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function CollectionsPage() {
-	return <div>CollectionsPage</div>;
+	return <Layout>CollectionsPage</Layout>;
 }
 
 export default CollectionsPage;

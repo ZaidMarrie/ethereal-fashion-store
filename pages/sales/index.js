@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function SalesPage() {
-	return <div>SalesPage</div>;
+	return <Layout>SalesPage</Layout>;
 }
 
 export default SalesPage;

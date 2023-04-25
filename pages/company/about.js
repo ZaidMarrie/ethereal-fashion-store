@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function AboutPage() {
-	return <div>AboutPage</div>;
+	return <Layout>AboutPage</Layout>;
 }
 
 export default AboutPage;

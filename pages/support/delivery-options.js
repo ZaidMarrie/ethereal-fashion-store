@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function DeliveryOptionsPage() {
-	return <div>DeliveryOptionsPage</div>;
+	return <Layout>DeliveryOptionsPage</Layout>;
 }
 
 export default DeliveryOptionsPage;

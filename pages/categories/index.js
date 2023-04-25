@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function CategoriesPage() {
-	return <div>CategoriesPage</div>;
+	return <Layout>CategoriesPage</Layout>;
 }
 
 export default CategoriesPage;

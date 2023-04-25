@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function CoatsJacketsPage() {
-	return <div>CoatsJacketsPage</div>;
+	return <Layout>CoatsJacketsPage</Layout>;
 }
 
 export default CoatsJacketsPage;

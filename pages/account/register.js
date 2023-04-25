@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function RegistrationPage() {
-	return <div>RegistrationPage</div>;
+	return <Layout>RegistrationPage</Layout>;
 }
 
 export default RegistrationPage;

@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function AccountPage() {
-	return <div>AccountPage</div>;
+	return <Layout>AccountPage</Layout>;
 }
 
 export default AccountPage;

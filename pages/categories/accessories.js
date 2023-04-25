@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function AccessoriesPage() {
-	return <div>AccessoriesPage</div>;
+	return <Layout>AccessoriesPage</Layout>;
 }
 
 export default AccessoriesPage;

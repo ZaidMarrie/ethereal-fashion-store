@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function HelpCenterPage() {
-	return <div>HelpCenterPage</div>;
+	return <Layout>HelpCenterPage</Layout>;
 }
 
 export default HelpCenterPage;

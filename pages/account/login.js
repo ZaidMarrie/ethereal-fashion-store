@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function LoginPage() {
-	return <div>LoginPage</div>;
+	return <Layout>LoginPage</Layout>;
 }
 
 export default LoginPage;

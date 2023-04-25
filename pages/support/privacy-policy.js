@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function PrivacyPolicyPage() {
-	return <div>PrivacyPolicyPage</div>;
+	return <Layout>PrivacyPolicyPage</Layout>;
 }
 
 export default PrivacyPolicyPage;

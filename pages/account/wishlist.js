@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function WishlistPage() {
-	return <div>WishlistPage</div>;
+	return <Layout>WishlistPage</Layout>;
 }
 
 export default WishlistPage;

@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function PaymentOptionsPage() {
-	return <div>PaymentOptionsPage</div>;
+	return <Layout>PaymentOptionsPage</Layout>;
 }
 
 export default PaymentOptionsPage;

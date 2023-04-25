@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function TopsPage() {
-	return <div>TopsPage</div>;
+	return <Layout>TopsPage</Layout>;
 }
 
 export default TopsPage;

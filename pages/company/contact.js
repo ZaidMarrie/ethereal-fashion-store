@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function ContactPage() {
-	return <div>ContactPage</div>;
+	return <Layout>ContactPage</Layout>;
 }
 
 export default ContactPage;

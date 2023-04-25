@@ -1,7 +1,7 @@
-import React from "react";
+import Layout from "@/components/global/Layout";
 
 function ShoesPage() {
-	return <div>ShoesPage</div>;
+	return <Layout>ShoesPage</Layout>;
 }
 
 export default ShoesPage;
