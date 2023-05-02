@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Logo from "../global/Logo";
-import IconButton from "../global/IconButton";
+import Logo from "@/components/global/Logo";
+import IconButton from "@/components/global/IconButton";
 import { IconContext } from "react-icons";
 import { VscSignIn } from "react-icons/vsc";
-import { BiHomeAlt, BiCategoryAlt, BiHeart } from "react-icons/bi";
+import { BiHomeAlt, BiCategoryAlt } from "react-icons/bi";
 import {
 	HiOutlineTag,
 	HiOutlineCollection,
@@ -15,11 +15,11 @@ import {
 	MdOutlineHelpCenter,
 	MdOutlineShoppingBag,
 } from "react-icons/md";
-import styles from "@/styles/components/Navbar.module.scss";
+import styles from "@/styles/components/NavMenu.module.scss";
 
-function NavMenu({ isMenuExpanded, clickHandler }) {
+function NavMenu({ isMenuOpen, handleClick }) {
 	return (
-		<div id="navMenu" className={styles.menu} aria-expanded={isMenuExpanded}>
+		<div id="navMenu" className={styles.menu} data-expanded={isMenuOpen}>
 			<div className={styles.menu__header}>
 				<Link href="/">
 					<Logo />
@@ -28,7 +28,7 @@ function NavMenu({ isMenuExpanded, clickHandler }) {
 				<IconButton
 					srText="Close Menu"
 					elementId="navMenu"
-					clickHandler={clickHandler}
+					handleClick={handleClick}
 				>
 					<MdOutlineClose />
 				</IconButton>

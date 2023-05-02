@@ -1,0 +1,19 @@
+@use "../utils/" as *;
+
+// ==================== Badge ==================== //
+.badge {
+	--offset: 5px;
+
+	font-size: 10px;
+	line-height: 1;
+	color: hsl(var(--clr-neutral-50));
+	width: rem(20);
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background-color: hsl(var(--clr-primary-900) / 0.9);
+	display: grid;
+	place-items: center;
+	position: absolute;
+	top: var(--offset);
+	right: var(--offset);
+}

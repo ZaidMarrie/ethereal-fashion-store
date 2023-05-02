@@ -1,14 +1,14 @@
 import styles from "@/styles/components/IconButton.module.scss";
 
-function IconButton({ srText, elementId, clickHandler, children }) {
+function IconButton({ ariaControls, ariaExpanded, handleClick, children }) {
 	return (
 		<button
 			className={styles.button}
-			aria-controls={elementId}
-			onClick={clickHandler}
+			aria-controls={ariaControls}
+			aria-expanded={ariaExpanded}
+			onClick={handleClick}
 		>
 			{children}
-			<span className="sr-only">{srText}</span>
 		</button>
 	);
 }
