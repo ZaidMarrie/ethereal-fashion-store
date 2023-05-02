@@ -1,0 +1,51 @@
+@use "../utils/" as *;
+
+// ==================== Cart Menu ==================== //
+.menu {
+	--button-size: rem(50);
+
+	width: rem(275);
+	padding: rem(20); // change
+	border-radius: 5px;
+	background-color: hsl(var(--clr-neutral-50));
+	box-shadow: var(--shadow-100);
+	position: absolute;
+	top: calc(rem(55) + var(--space-400));
+	right: 0;
+	transform: scale(0);
+	transform-origin: top right;
+	transition: transform 100ms ease-in-out;
+
+	&[data-expanded="true"] {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	&::before {
+		content: "";
+		border: 1rem solid transparent;
+		border-bottom-color: hsl(var(--clr-neutral-50));
+		position: absolute;
+		top: -25px;
+		right: 5px;
+	}
+
+	& > * + * {
+		border-top: 1px solid hsl(var(--clr-neutral-200));
+	}
+
+	&__header {
+		font-weight: 700;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__list {
+		list-style-type: armenian;
+	}
+
+	&__footer {
+		padding-block: 1rem;
+	}
+}

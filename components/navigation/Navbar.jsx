@@ -55,7 +55,7 @@ function Navbar() {
 						<span className="sr-only">My Cart</span>
 						<Badge count={3} />
 					</IconButton>
-					<CartMenu />
+					<CartMenu isCartOpen={cartOpen} />
 				</div>
 			</div>
 		</nav>
