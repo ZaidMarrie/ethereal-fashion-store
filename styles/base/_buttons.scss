@@ -1,0 +1,39 @@
+@use "../utils/" as *;
+
+// ==================== Button Styles ==================== //
+.button {
+	font-weight: 600;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: hsl(var(--clr-neutral-50));
+	padding: rem(12) rem(26);
+	border-radius: rem(5);
+	background-color: hsl(var(--clr-primary-900));
+	box-shadow: var(--shadow-100);
+	transition: background-color 150ms linear;
+
+	&:hover,
+	&:focus {
+		background-color: hsl(var(--clr-primary-800));
+	}
+
+	&--full {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&--secondary {
+		color: hsl(var(--clr-primary-900));
+		border: 2px solid currentColor;
+		background-color: transparent;
+		transition: color 150ms linear;
+
+		&:hover,
+		&:focus {
+			color: hsl(var(--clr-primary-800));
+			background-color: transparent;
+		}
+	}
+}
