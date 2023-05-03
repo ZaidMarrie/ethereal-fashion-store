@@ -5,6 +5,7 @@
 	padding-block: var(--space-400);
 	background-color: hsl(var(--clr-neutral-50));
 	box-shadow: var(--shadow-300);
+	isolation: isolate;
 
 	&__wrapper {
 		width: min(100% - 2.125rem, 80.625rem);
