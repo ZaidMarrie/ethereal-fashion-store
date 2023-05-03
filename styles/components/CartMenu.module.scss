@@ -2,15 +2,13 @@
 
 // ==================== Cart Menu ==================== //
 .menu {
-	--button-size: rem(50);
-
-	width: rem(275);
-	padding: rem(20); // change
+	width: rem(300);
+	padding: var(--space-200-300);
 	border-radius: 5px;
 	background-color: hsl(var(--clr-neutral-50));
 	box-shadow: var(--shadow-100);
 	position: absolute;
-	top: calc(rem(55) + var(--space-400));
+	top: calc(rem(55) + var(--space-400)); // 55 is the size of icon button
 	right: 0;
 	transform: scale(0);
 	transform-origin: top right;
@@ -27,25 +25,36 @@
 		border-bottom-color: hsl(var(--clr-neutral-50));
 		position: absolute;
 		top: -25px;
-		right: 5px;
+		right: rem(12);
 	}
 
 	& > * + * {
 		border-top: 1px solid hsl(var(--clr-neutral-200));
 	}
 
-	&__header {
+	&__header,
+	&__total {
 		font-weight: 700;
-		width: 100%;
+		line-height: 1.4;
 		display: flex;
 		justify-content: space-between;
 	}
 
-	&__list {
-		list-style-type: armenian;
+	&__header {
+		padding-bottom: var(--space-200);
 	}
 
-	&__footer {
-		padding-block: 1rem;
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: var(--space-200) 0;
+	}
+
+	&__total {
+		padding-block: var(--space-100);
+	}
+
+	&__button {
+		padding-top: var(--space-200);
 	}
 }
