@@ -1,4 +1,6 @@
 :root {
+	--container-width: min(100% - 2.125rem, 80.625rem);
+
 	--space-100: clamp(0.25rem, calc(0.23rem + 0.09vw), 0.31rem); // 4 - 5px
 	--space-200: clamp(0.5rem, calc(0.48rem + 0.09vw), 0.56rem); // 8 - 9px
 	--space-300: clamp(0.75rem, calc(0.71rem + 0.19vw), 0.88rem); // 12 - 14px
