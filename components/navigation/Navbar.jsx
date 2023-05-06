@@ -27,7 +27,7 @@ function Navbar() {
 					handleClick={toggleMenu}
 				>
 					<MenuIcon />
-					<span className="sr-only">Menu</span>
+					<span className="sr-only">Open Menu</span>
 				</IconButton>
 
 				<NavMenu isMenuOpen={menuExpanded} handleClick={toggleMenu} />
@@ -55,6 +55,7 @@ function Navbar() {
 						<span className="sr-only">My Cart</span>
 						<Badge count={3} />
 					</IconButton>
+
 					<CartMenu isCartOpen={cartOpen} />
 				</div>
 			</div>

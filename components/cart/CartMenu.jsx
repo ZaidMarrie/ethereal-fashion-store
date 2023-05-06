@@ -7,7 +7,7 @@ function CartMenu({ isCartOpen, itemCount, handleClick }) {
 		<div id="cartMenu" className={styles.menu} data-expanded={isCartOpen}>
 			<div className={styles.menu__header}>
 				<span>Items In Cart</span>
-				<span>1</span>
+				<span>3</span>
 			</div>
 
 			<ul className={styles.menu__list}>

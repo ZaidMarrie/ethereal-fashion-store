@@ -1,5 +1,7 @@
 import Meta from "@/components/global/Meta";
 import Layout from "@/components/global/Layout";
+import Carousel from "@/components/carousel/Carousel";
+import CarouselContextProvider from "@/components/carousel/context/CarouselContext";
 import styles from "@/styles/pages/Home.module.scss";
 
 export default function HomePage() {
@@ -8,7 +10,9 @@ export default function HomePage() {
 			<Meta />
 
 			<Layout>
-				<h1 className={styles.title}>Off to a legendary start!</h1>
+				<CarouselContextProvider>
+					<Carousel />
+				</CarouselContextProvider>
 			</Layout>
 		</>
 	);

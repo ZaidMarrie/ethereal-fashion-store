@@ -10,6 +10,7 @@
 	position: absolute;
 	top: calc(rem(55) + var(--space-400)); // 55 is the size of icon button
 	right: 0;
+	z-index: 4;
 	transform: scale(0);
 	transform-origin: top right;
 	transition: transform 100ms ease-in-out;

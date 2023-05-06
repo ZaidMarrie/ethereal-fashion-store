@@ -1,0 +1,62 @@
+@use "../utils/" as *;
+
+// ==================== Carousel  ==================== //
+.carousel {
+	--navbar-height: 5.4rem;
+
+	height: calc(100vh - var(--navbar-height));
+	background-color: hsl(var(--clr-neutral-100));
+	overflow-x: hidden;
+	position: relative;
+
+	&__slides {
+		display: flex;
+		height: 100%;
+		transition: transform 250ms ease-in-out;
+	}
+}
+
+// ==================== Carousel Controls ==================== //
+.controls,
+.indicators {
+	display: flex;
+	position: absolute;
+
+	& > button {
+		aspect-ratio: 1;
+		border-radius: 50%;
+		box-shadow: var(--shadow-100);
+	}
+}
+
+.controls {
+	width: var(--container-width);
+	justify-content: space-between;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	& > button {
+		width: rem(48);
+		background-color: hsl(var(--clr-neutral-100));
+		display: grid;
+		place-items: center;
+	}
+}
+
+.indicators {
+	gap: rem(20);
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: var(--space-500);
+
+	& > button {
+		width: rem(20);
+		background-color: hsl(var(--clr-neutral-50));
+		transition: background-color 100ms ease-in-out;
+
+		&[aria-selected="true"] {
+			background-color: hsl(var(--clr-primary-500));
+		}
+	}
+}

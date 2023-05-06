@@ -25,7 +25,7 @@ function CartItem() {
 				</div>
 
 				<div className={styles.item__details}>
-					<span>Qty: 1</span>
+					<span>Qty: 3</span>
 					<span aria-label="item price:">$339</span>
 				</div>
 			</div>

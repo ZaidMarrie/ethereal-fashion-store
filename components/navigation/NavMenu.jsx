@@ -26,11 +26,12 @@ function NavMenu({ isMenuOpen, handleClick }) {
 				</Link>
 
 				<IconButton
-					srText="Close Menu"
-					elementId="navMenu"
+					ariaControls="navMenu"
+					ariaExpanded={isMenuOpen}
 					handleClick={handleClick}
 				>
 					<MdOutlineClose />
+					<span className="sr-only">Close Menu</span>
 				</IconButton>
 			</div>
 
