@@ -21,7 +21,7 @@
 }
 
 .textOverlay {
-	padding: var(--space-400);
+	padding: var(--space-100);
 	text-align: center;
 	position: absolute;
 	top: 50%;
@@ -32,8 +32,12 @@
 	place-items: center;
 
 	h2 {
-		font-size: var(--fs-900);
+		font-size: var(--fs-600);
 		text-transform: capitalize;
 		color: hsl(var(--clr-neutral-50));
+
+		@include breakpoint(medium) {
+			font-size: var(--fs-800);
+		}
 	}
 }

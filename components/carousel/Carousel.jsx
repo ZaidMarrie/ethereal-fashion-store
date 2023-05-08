@@ -10,20 +10,20 @@ function Carousel() {
 		{
 			id: 1,
 			image: {
-				url: "/images/carousel-image-01.jpg",
-				altText: "Lady wearing floral white dress carrying a woven handbag",
+				url: "/images/carousel-image-03.jpg",
+				altText: "Three leather handbags hanging from a hook",
 			},
 			text: {
-				title: "Shop our summer dress sale and get 30% Off all summer dresses",
-				buttonText: "Shop Summer Collection",
+				title: "Shop our accessories and get 15% off selected products",
+				buttonText: "Shop Accessories",
 			},
-			href: "/sales/summer-sale",
+			href: "/sales/accessories",
 		},
 		{
 			id: 2,
 			image: {
 				url: "/images/carousel-image-02.jpg",
-				altText: "Three leather handbags hanging from a hook",
+				altText: "Four left block heeled ankle boots with different variations",
 			},
 			text: {
 				title: "Shop our new arrivals to get the latest trends",
@@ -34,14 +34,14 @@ function Carousel() {
 		{
 			id: 3,
 			image: {
-				url: "/images/carousel-image-03.jpg",
-				altText: "Four left block heeled ankle boots with different variations",
+				url: "/images/carousel-image-01.jpg",
+				altText: "Lady wearing floral white dress carrying a woven handbag",
 			},
 			text: {
-				title: "Shop our accessories and get 15% off selected products",
-				buttonText: "Shop Accessories",
+				title: "Shop our summer dress sale and get 30% Off all summer dresses",
+				buttonText: "Shop Summer Collection",
 			},
-			href: "/sales/accessories",
+			href: "/sales/summer-sale",
 		},
 	];
 
