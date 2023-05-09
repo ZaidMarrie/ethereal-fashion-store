@@ -24,7 +24,7 @@
 
 	& > button {
 		aspect-ratio: 1;
-		border-radius: 50%;
+		border-radius: var(--rounded-full);
 		box-shadow: var(--shadow-100);
 	}
 }

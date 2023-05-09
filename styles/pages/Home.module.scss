@@ -1,5 +1,6 @@
+@use "../utils/" as *;
+
 // ==================== Home Page ==================== //
-.title {
-	margin-top: 3rem;
-	text-align: center;
+.section {
+	padding-block: var(--space-700);
 }

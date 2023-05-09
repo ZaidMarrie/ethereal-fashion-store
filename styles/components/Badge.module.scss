@@ -9,7 +9,7 @@
 	color: hsl(var(--clr-neutral-50));
 	width: rem(20);
 	aspect-ratio: 1;
-	border-radius: 50%;
+	border-radius: var(--rounded-full);
 	background-color: hsl(var(--clr-primary-900) / 0.9);
 	display: grid;
 	place-items: center;

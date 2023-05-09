@@ -4,7 +4,7 @@
 .menu {
 	width: rem(300);
 	padding: var(--space-200-300);
-	border-radius: 5px;
+	border-radius: var(--rounded-200);
 	background-color: hsl(var(--clr-neutral-50));
 	box-shadow: var(--shadow-100);
 	position: absolute;

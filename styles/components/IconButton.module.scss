@@ -5,7 +5,7 @@
 	width: rem(50);
 	aspect-ratio: 1;
 	padding: rem(8);
-	border-radius: 50%;
+	border-radius: var(--rounded-full);
 	display: flex;
 	align-items: center;
 	justify-content: center;

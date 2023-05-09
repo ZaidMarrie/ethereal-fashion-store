@@ -13,6 +13,12 @@ export default function HomePage() {
 				<CarouselContextProvider>
 					<Carousel />
 				</CarouselContextProvider>
+
+				<div className="container">
+					<section className={styles.section}>
+						<h2 className="section-title">Featured Products</h2>
+					</section>
+				</div>
 			</Layout>
 		</>
 	);
