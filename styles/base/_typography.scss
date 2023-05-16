@@ -20,10 +20,61 @@ a {
 	}
 }
 
-.section-title {
+// ==================== Font Size Utility Classes ==================== //
+.fs-100 {
+	font-size: var(--fs-100);
+}
+.fs-200 {
+	font-size: var(--fs-200);
+}
+.fs-300 {
+	font-size: var(--fs-300);
+}
+.fs-400 {
+	font-size: var(--fs-400);
+}
+.fs-500 {
+	font-size: var(--fs-500);
+}
+.fs-600 {
+	font-size: var(--fs-600);
+}
+.fs-700 {
 	font-size: var(--fs-700);
-	display: grid;
-	align-items: center;
+}
+.fs-800 {
+	font-size: var(--fs-800);
+}
+.fs-900 {
+	font-size: var(--fs-900);
+}
+
+// ==================== Text Utility Classes ==================== //
+.capitalize {
+	text-transform: capitalize;
+}
+
+.text-center {
+	text-align: center;
+}
+
+// ==================== Color Utility Classes ==================== //
+.text-neutral-50 {
+	color: hsl(var(--clr-neutral-50));
+}
+.text-neutral-700 {
+	color: hsl(var(--clr-neutral-700));
+}
+.text-neutral-900 {
+	color: hsl(var(--clr-neutral-900));
+}
+
+.text-primary-900 {
+	color: hsl(var(--clr-primary-900));
+}
+
+.section-title {
+	margin-bottom: var(--space-600);
 	grid-template-columns: 1fr auto 1fr;
 
 	&::before,
@@ -32,13 +83,5 @@ a {
 		height: 1px;
 		transform: translateY(0.25rem);
 		background-color: hsl(var(--clr-neutral-500) / 0.5);
-	}
-
-	&::before {
-		margin-right: var(--space-400);
-	}
-
-	&::after {
-		margin-left: var(--space-400);
 	}
 }

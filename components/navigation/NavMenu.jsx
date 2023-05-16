@@ -15,12 +15,18 @@ import {
 	MdOutlineHelpCenter,
 	MdOutlineShoppingBag,
 } from "react-icons/md";
-import styles from "@/styles/components/NavMenu.module.scss";
+import styles from "./styles/NavMenu.module.scss";
 
 function NavMenu({ isMenuOpen, handleClick }) {
 	return (
-		<div id="navMenu" className={styles.menu} data-expanded={isMenuOpen}>
-			<div className={styles.menu__header}>
+		<div
+			id="navMenu"
+			className={`${styles.menu} flex flex-column`}
+			data-expanded={isMenuOpen}
+		>
+			<div
+				className={`${styles.menu__header} flex items-center justify-between`}
+			>
 				<Link href="/">
 					<Logo />
 				</Link>
@@ -40,32 +46,50 @@ function NavMenu({ isMenuOpen, handleClick }) {
 			>
 				<ul className={styles.menu__list} aria-label="Main Navigation Links">
 					<li>
-						<Link className={styles.menu__link} href="/">
+						<Link
+							className={`${styles.menu__link} text-neutral-900 flex items-center`}
+							href="/"
+						>
 							<BiHomeAlt /> Home
 						</Link>
 					</li>
 					<li>
-						<Link className={styles.menu__link} href="/sales">
+						<Link
+							className={`${styles.menu__link} text-neutral-900 flex items-center`}
+							href="/sales"
+						>
 							<HiOutlineTag /> Sales
 						</Link>
 					</li>
 					<li>
-						<Link className={styles.menu__link} href="/collections">
+						<Link
+							className={`${styles.menu__link} text-neutral-900 flex items-center`}
+							href="/collections"
+						>
 							<HiOutlineCollection /> Collections
 						</Link>
 					</li>
 					<li>
-						<Link className={styles.menu__link} href="/categories">
+						<Link
+							className={`${styles.menu__link} text-neutral-900 flex items-center`}
+							href="/categories"
+						>
 							<BiCategoryAlt /> Categories
 						</Link>
 					</li>
 					<li>
-						<Link className={styles.menu__link} href="/account">
+						<Link
+							className={`${styles.menu__link} text-neutral-900 flex items-center`}
+							href="/account"
+						>
 							<MdOutlineAccountCircle /> My Account
 						</Link>
 					</li>
 					<li>
-						<Link className={styles.menu__link} href="/support/help-center">
+						<Link
+							className={`${styles.menu__link} text-neutral-900 flex items-center`}
+							href="/support/help-center"
+						>
 							<MdOutlineHelpCenter /> Help Center
 						</Link>
 					</li>
@@ -73,19 +97,30 @@ function NavMenu({ isMenuOpen, handleClick }) {
 
 				<ul className={styles.menu__list} aria-label="User Account Links">
 					<li>
-						<Link className={styles.menu__link} href="/account/wishlist">
+						<Link
+							className={`${styles.menu__link} text-neutral-900 flex items-center`}
+							href="/account/wishlist"
+						>
 							<HiOutlineHeart /> Wishlist
 						</Link>
 					</li>
 					<li>
-						<Link className={styles.menu__link} href="/account/cart">
+						<Link
+							className={`${styles.menu__link} text-neutral-900 flex items-center`}
+							href="/account/cart"
+						>
 							<MdOutlineShoppingBag /> My Cart
 						</Link>
 					</li>
 				</ul>
 
-				<div className={styles.menu__footer}>
-					<Link className={styles.footer__link} href="/account/login">
+				<div
+					className={`${styles.menu__footer} flex items-center justify-between flex-wrap`}
+				>
+					<Link
+						className={`${styles.footer__link} text-neutral-900 flex items-center`}
+						href="/account/login"
+					>
 						<VscSignIn /> Login
 					</Link>
 					<p>

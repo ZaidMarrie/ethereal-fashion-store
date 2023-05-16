@@ -1,3 +1,4 @@
+// ==================== Global Styling ==================== //
 :focus {
 	outline-offset: 2px;
 	outline: 2px solid hsl(var(--clr-primary-900));
@@ -12,9 +13,23 @@ body {
 	background-color: hsl(var(--clr-primary-100));
 }
 
-.container {
-	width: var(--container-width);
-	margin-inline: auto;
+// ==================== Border Radius Utility Classes ==================== //
+.rounded {
+	&-100 {
+		border-radius: var(--rounded-100);
+	}
+	&-200 {
+		border-radius: var(--rounded-200);
+	}
+	&-300 {
+		border-radius: var(--rounded-300);
+	}
+	&-400 {
+		border-radius: var(--rounded-400);
+	}
+	&-full {
+		border-radius: var(--rounded-full);
+	}
 }
 
 // For screen reader text

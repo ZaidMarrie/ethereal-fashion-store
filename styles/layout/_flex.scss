@@ -1,0 +1,13 @@
+// ==================== Flexbox Utility Classes ==================== //
+.flex {
+	display: flex;
+	gap: var(--gap, 1rem);
+
+	&-column {
+		flex-direction: column;
+	}
+
+	&-wrap {
+		flex-wrap: wrap;
+	}
+}

@@ -1,9 +1,9 @@
-import styles from "@/styles/components/IconButton.module.scss";
+import styles from "./styles/IconButton.module.scss";
 
 function IconButton({ ariaControls, ariaExpanded, handleClick, children }) {
 	return (
 		<button
-			className={styles.button}
+			className={`${styles.button} rounded-full grid place-center`}
 			aria-controls={ariaControls}
 			aria-expanded={ariaExpanded}
 			onClick={handleClick}

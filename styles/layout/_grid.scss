@@ -1,0 +1,12 @@
+@use "../abstract/functions" as functions;
+@use "../abstract/breakpoints" as breakpoints;
+
+// ==================== Grid Utility Classes ==================== //
+.grid {
+	display: grid;
+	gap: var(--gap, 1rem);
+}
+
+.place-center {
+	place-items: center;
+}

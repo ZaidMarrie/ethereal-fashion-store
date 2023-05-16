@@ -1,13 +1,13 @@
+import { useState } from "react";
+import { MdOutlineAccountCircle, MdOutlineShoppingBag } from "react-icons/md";
 import Link from "next/link";
 import MenuIcon from "./MenuIcon";
 import NavMenu from "./NavMenu";
 import Logo from "@/components/global/Logo";
 import Badge from "@/components/global/Badge";
 import IconButton from "@/components/global/IconButton";
-import CartMenu from "@/components/cart/CartMenu";
-import { useState } from "react";
-import { MdOutlineAccountCircle, MdOutlineShoppingBag } from "react-icons/md";
-import styles from "@/styles/components/Navbar.module.scss";
+import CartDialog from "@/components/cart/CartDialog";
+import styles from "./styles/Navbar.module.scss";
 
 function Navbar() {
 	const [menuExpanded, setMenuExpanded] = useState(false);
@@ -20,7 +20,9 @@ function Navbar() {
 
 	return (
 		<nav className={styles.nav}>
-			<div className={styles.nav__wrapper}>
+			<div
+				className={`${styles.nav__wrapper} flex items-center justify-between`}
+			>
 				<IconButton
 					ariaControls="navMenu"
 					ariaExpanded={menuExpanded}
@@ -36,9 +38,9 @@ function Navbar() {
 					<Logo />
 				</Link>
 
-				<div className={styles.nav__iconsGroup}>
+				<div className={`${styles.nav__iconsGroup} flex`}>
 					<IconButton
-						ariaControls="account"
+						ariaControls="accountDialog"
 						ariaExpanded={accountOpen}
 						handleClick={toggleAccount}
 					>
@@ -47,7 +49,7 @@ function Navbar() {
 					</IconButton>
 
 					<IconButton
-						ariaControls="cartMenu"
+						ariaControls="cartDialog"
 						ariaExpanded={cartOpen}
 						handleClick={toggleCart}
 					>
@@ -56,7 +58,7 @@ function Navbar() {
 						<Badge count={3} />
 					</IconButton>
 
-					<CartMenu isCartOpen={cartOpen} />
+					<CartDialog isCartOpen={cartOpen} />
 				</div>
 			</div>
 		</nav>

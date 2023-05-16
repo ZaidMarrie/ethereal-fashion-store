@@ -1,4 +1,4 @@
-@use "../utils/" as *;
+@use "../abstract/functions" as functions;
 
 // ==================== Button Styles ==================== //
 .button {
@@ -7,7 +7,7 @@
 	text-decoration: none;
 	text-transform: capitalize;
 	color: hsl(var(--clr-neutral-50));
-	padding: rem(12) rem(26);
+	padding: functions.rem(12) functions.rem(26);
 	border-radius: var(--rounded-200);
 	background-color: hsl(var(--clr-primary-900));
 	box-shadow: var(--shadow-100);

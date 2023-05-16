@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "@/styles/components/CarouselSlide.module.scss";
+import styles from "./styles/CarouselSlide.module.scss";
 
 function CarouselSlide({ slideData, elementId }) {
 	return (
@@ -12,7 +12,9 @@ function CarouselSlide({ slideData, elementId }) {
 				alt={slideData.image.altText}
 			/>
 
-			<div className={styles.textOverlay}>
+			<div
+				className={`${styles.textOverlay} text-neutral-50 text-center capitalize grid place-center`}
+			>
 				<h2>{slideData.text.title}</h2>
 
 				<Link href={slideData.href} className="button button--light">

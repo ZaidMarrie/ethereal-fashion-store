@@ -1,8 +1,8 @@
+import { useCarouselContext } from "./context/CarouselContext";
 import CarouselSlide from "./CarouselSlide";
 import CarouselButtons from "./CarouselButtons";
 import CarouselIndicators from "./CarouselIndicators";
-import { useCarouselContext } from "./context/CarouselContext";
-import styles from "@/styles/components/Carousel.module.scss";
+import styles from "./styles/Carousel.module.scss";
 
 function Carousel() {
 	const { slideIndex } = useCarouselContext();
@@ -48,7 +48,7 @@ function Carousel() {
 	return (
 		<header className={styles.carousel}>
 			<div
-				className={styles.carousel__slides}
+				className={`${styles.carousel__slides} flex`}
 				style={{ transform: `translateX(${slideIndex * -100}%)` }}
 			>
 				{slidesData.map((slide, index) => (

@@ -1,11 +1,15 @@
 import Link from "next/link";
-import styles from "@/styles/components/CartMenu.module.scss";
 import CartItem from "./CartItem";
+import styles from "./styles/CartDialog.module.scss";
 
-function CartMenu({ isCartOpen, itemCount, handleClick }) {
+function CartDialog({ isCartOpen, itemCount, handleClick }) {
 	return (
-		<div id="cartMenu" className={styles.menu} data-expanded={isCartOpen}>
-			<div className={styles.menu__header}>
+		<div
+			id="cartDialog"
+			className={`${styles.menu} rounded-200`}
+			data-expanded={isCartOpen}
+		>
+			<div className={`${styles.menu__header} flex justify-between`}>
 				<span>Items In Cart</span>
 				<span>3</span>
 			</div>
@@ -14,7 +18,7 @@ function CartMenu({ isCartOpen, itemCount, handleClick }) {
 				<CartItem />
 			</ul>
 
-			<div className={styles.menu__total}>
+			<div className={`${styles.menu__total} flex justify-between`}>
 				<span>Total</span>
 				<span>$339</span>
 			</div>
@@ -28,4 +32,4 @@ function CartMenu({ isCartOpen, itemCount, handleClick }) {
 	);
 }
 
-export default CartMenu;
+export default CartDialog;

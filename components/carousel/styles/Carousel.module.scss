@@ -1,4 +1,4 @@
-@use "../utils/" as *;
+@use "../../../styles/abstract/functions" as *;
 
 // ==================== Carousel  ==================== //
 .carousel {
@@ -10,7 +10,6 @@
 	position: relative;
 
 	&__slides {
-		display: flex;
 		height: 100%;
 		transition: transform 250ms ease-in-out;
 	}
@@ -19,7 +18,6 @@
 // ==================== Carousel Controls ==================== //
 .controls,
 .indicators {
-	display: flex;
 	position: absolute;
 
 	& > button {
@@ -31,7 +29,6 @@
 
 .controls {
 	width: var(--container-width);
-	justify-content: space-between;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -39,13 +36,11 @@
 	& > button {
 		width: rem(48);
 		background-color: hsl(var(--clr-neutral-200));
-		display: grid;
-		place-items: center;
 	}
 }
 
 .indicators {
-	gap: rem(20);
+	--gap: 1.25rem;
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: var(--space-500);

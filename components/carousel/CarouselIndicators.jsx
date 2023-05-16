@@ -1,11 +1,11 @@
-import styles from "@/styles/components/Carousel.module.scss";
 import { useCarouselContext } from "./context/CarouselContext";
+import styles from "./styles/Carousel.module.scss";
 
 function CarouselIndicators() {
 	const { slideIndex, goToSlide } = useCarouselContext();
 
 	return (
-		<div className={styles.indicators}>
+		<div className={`${styles.indicators} flex`}>
 			<button
 				onClick={() => goToSlide(0)}
 				role="tab"

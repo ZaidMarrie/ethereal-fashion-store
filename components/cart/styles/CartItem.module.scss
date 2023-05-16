@@ -1,0 +1,31 @@
+@use "../../../styles/abstract/functions" as *;
+
+// ==================== Cart Menu ==================== //
+.item {
+	--gap: var(--space-300);
+
+	&__img {
+		aspect-ratio: 1;
+		object-fit: cover;
+	}
+
+	&__header,
+	&__details {
+		--gap: var(--space-300);
+	}
+
+	&__header a {
+		font-size: rem(16);
+		font-weight: 700;
+		line-height: 1.1;
+	}
+
+	&__button {
+		aspect-ratio: 1;
+		padding: var(--space-100);
+	}
+
+	&__details {
+		margin-top: auto;
+	}
+}

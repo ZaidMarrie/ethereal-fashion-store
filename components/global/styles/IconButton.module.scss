@@ -1,18 +1,15 @@
-@use "../utils/" as *;
+@use "../../../styles/abstract/functions" as *;
 
 // ==================== Button with Icon ==================== //
 .button {
 	width: rem(50);
 	aspect-ratio: 1;
 	padding: rem(8);
-	border-radius: var(--rounded-full);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	outline-offset: 0;
 	position: relative;
 
 	&:active {
-		background-color: hsl(var(--clr-neutral-100));
+		background-color: hsl(var(--clr-neutral-200));
 		box-shadow: var(--shadow-100);
 	}
 }
