@@ -1,5 +1,5 @@
-@use "../abstract/functions" as functions;
-@use "../abstract/breakpoints" as breakpoints;
+@use "../abstract/functions" as *;
+@use "../abstract/breakpoints" as *;
 
 // ==================== Grid Utility Classes ==================== //
 .grid {
@@ -9,4 +9,8 @@
 
 .place-center {
 	place-items: center;
+}
+
+.products-grid {
+	grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr));
 }

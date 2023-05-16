@@ -58,6 +58,10 @@ a {
 	text-align: center;
 }
 
+.line-through {
+	text-decoration: line-through;
+}
+
 // ==================== Color Utility Classes ==================== //
 .text-neutral-50 {
 	color: hsl(var(--clr-neutral-50));

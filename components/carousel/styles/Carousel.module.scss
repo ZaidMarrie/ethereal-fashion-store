@@ -47,6 +47,7 @@
 
 	& > button {
 		width: rem(20);
+		outline-color: hsl(var(--clr-primary-500));
 		background-color: hsl(var(--clr-neutral-50));
 		transition: background-color 100ms ease-in-out;
 

@@ -1,6 +1,3 @@
-import Link from "next/link";
-import Logo from "@/components/global/Logo";
-import IconButton from "@/components/global/IconButton";
 import { IconContext } from "react-icons";
 import { VscSignIn } from "react-icons/vsc";
 import { BiHomeAlt, BiCategoryAlt } from "react-icons/bi";
@@ -15,6 +12,10 @@ import {
 	MdOutlineHelpCenter,
 	MdOutlineShoppingBag,
 } from "react-icons/md";
+
+import Link from "next/link";
+import Logo from "@/components/global/Logo";
+import IconButton from "@/components/global/IconButton";
 import styles from "./styles/NavMenu.module.scss";
 
 function NavMenu({ isMenuOpen, handleClick }) {

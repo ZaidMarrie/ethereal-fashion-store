@@ -1,6 +1,6 @@
 import { Oswald } from "next/font/google";
 import { IconContext } from "react-icons";
-import "@/styles/styles.scss";
+import "../styles/styles.scss";
 
 const oswald = Oswald({ subsets: ["latin"] });
 
