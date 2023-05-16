@@ -1,4 +1,4 @@
-import { useCarouselContext } from "./context/CarouselContext";
+import { useCarouselContext } from "@/context/CarouselContext";
 import CarouselSlide from "./CarouselSlide";
 import CarouselButtons from "./CarouselButtons";
 import CarouselIndicators from "./CarouselIndicators";

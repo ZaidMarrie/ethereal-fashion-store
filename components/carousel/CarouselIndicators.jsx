@@ -1,4 +1,4 @@
-import { useCarouselContext } from "./context/CarouselContext";
+import { useCarouselContext } from "@/context/CarouselContext";
 import styles from "./styles/Carousel.module.scss";
 
 function CarouselIndicators() {

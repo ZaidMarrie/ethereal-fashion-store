@@ -5,6 +5,7 @@
 			"@/components/*": ["components/*"],
 			"@/styles/*": ["styles/pages/*"],
 			"@/state/*": ["state/*"],
+			"@/context/*": ["context/*"],
 			"@/assets/*": ["public/*"],
 			"@/sanity/*": ["sanity/lib/*"]
 		}

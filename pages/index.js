@@ -2,7 +2,7 @@ import { client } from "@/sanity/client";
 import Meta from "@/components/global/Meta";
 import Layout from "@/components/global/Layout";
 import Carousel from "@/components/carousel/Carousel";
-import CarouselContextProvider from "@/components/carousel/context/CarouselContext";
+import CarouselContextProvider from "@/context/CarouselContext";
 import styles from "@/styles/Home.module.scss";
 
 export default function HomePage({ featuredProducts }) {
