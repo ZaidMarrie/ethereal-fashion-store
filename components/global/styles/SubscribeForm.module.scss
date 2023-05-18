@@ -1,0 +1,48 @@
+@use "../../../styles/abstract/functions" as *;
+@use "../../../styles/abstract/breakpoints" as *;
+
+// ==================== Subscription Form Section ==================== //
+.section {
+	max-width: 65ch;
+	margin-inline: auto;
+
+	p {
+		margin-top: var(--space-400);
+	}
+}
+
+.form {
+	margin-top: var(--space-500);
+
+	@include breakpoint(medium) {
+		&__wrapper {
+			--gap: 0;
+			grid-template-columns: 1fr auto;
+
+			button {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+
+			& > *:focus {
+				outline-color: transparent;
+			}
+		}
+	}
+
+	&__input {
+		padding: rem(5) var(--space-200);
+		border: 2px solid hsl(var(--clr-primary-900));
+
+		@include breakpoint(medium) {
+			width: 100%;
+			border-right: 0;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		&:focus {
+			border-color: hsl(var(--clr-primary-800));
+		}
+	}
+}
