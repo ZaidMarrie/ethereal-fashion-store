@@ -9,7 +9,7 @@ function CarouselSlide({ slideData, elementId }) {
 				src={slideData.image.url}
 				priority
 				fill
-				alt={slideData.image.altText}
+				alt={slideData.image.alt_text}
 			/>
 
 			<div

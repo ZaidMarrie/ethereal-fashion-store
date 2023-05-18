@@ -7,6 +7,7 @@
 			"@/state/*": ["state/*"],
 			"@/context/*": ["context/*"],
 			"@/assets/*": ["public/*"],
+			"@/data/*": ["data/*"],
 			"@/sanity/*": ["sanity/lib/*"]
 		}
 	}
