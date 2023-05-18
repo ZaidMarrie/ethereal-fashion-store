@@ -2,6 +2,36 @@
 @use "../abstract/breakpoints" as *;
 
 // ==================== Home Page ==================== //
-.section {
-	padding-block: var(--space-700);
+.banner {
+	--space: min(-2.125rem, 100% - -80.625rem);
+
+	padding: 0;
+	background-color: hsl(var(--clr-neutral-100));
+	box-shadow: 0 0 0 100vmax hsl(var(--clr-neutral-100));
+	clip-path: inset(0 -100vmax);
+
+	@include breakpoint(medium) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	&__image {
+		position: relative;
+		height: 100%;
+
+		@include breakpoint(medium) {
+			transform: translateX(var(--space));
+		}
+
+		& > img {
+			object-fit: cover;
+		}
+	}
+
+	&__content {
+		padding: var(--space-700) var(--space-400);
+
+		& > * + * {
+			margin-top: var(--space-500);
+		}
+	}
 }

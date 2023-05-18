@@ -7,6 +7,10 @@
 	overflow: hidden;
 	position: relative;
 
+	&:hover &__image img {
+		transform: scale(1.2);
+	}
+
 	&__wrapper {
 		padding: 0 var(--space-400) var(--space-400);
 
@@ -20,10 +24,12 @@
 		width: 100%;
 		height: rem(375);
 		background-color: hsl(var(--clr-neutral-200));
+		overflow: hidden;
 		position: relative;
 
 		img {
 			object-fit: cover;
+			transition: transform 350ms ease-in-out;
 		}
 	}
 

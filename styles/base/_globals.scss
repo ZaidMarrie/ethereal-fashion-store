@@ -13,6 +13,10 @@ body {
 	background-color: hsl(var(--clr-primary-100));
 }
 
+section {
+	padding-block: var(--space-700);
+}
+
 // ==================== Border Radius Utility Classes ==================== //
 .rounded {
 	&-100 {
