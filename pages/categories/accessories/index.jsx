@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function AccessoriesPage() {
-	return <Layout>AccessoriesPage</Layout>;
+	return <div>AccessoriesPage</div>;
 }
 
 export default AccessoriesPage;

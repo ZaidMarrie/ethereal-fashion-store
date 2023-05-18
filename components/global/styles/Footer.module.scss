@@ -1,0 +1,61 @@
+@use "../../../styles/abstract/breakpoints" as *;
+
+// ==================== Footer ==================== //
+.footer {
+	padding-top: var(--space-600);
+	background-color: hsl(var(--clr-neutral-900));
+	position: relative;
+
+	h3,
+	.footer__logo {
+		line-height: 1;
+		margin-bottom: var(--space-500);
+	}
+
+	a {
+		padding-block: var(--space-100);
+	}
+
+	&__wrapper {
+		--gap: var(--space-500);
+
+		text-align: center;
+		width: var(--container-width);
+		margin-inline: auto;
+		padding-bottom: var(--space-600);
+
+		@include breakpoint(medium) {
+			--gap: var(--space-900);
+
+			text-align: start;
+			row-gap: var(--space-500);
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include breakpoint(large) {
+			--gap: var(--space-500);
+
+			grid-template-columns: 1.5fr repeat(3, 1fr);
+		}
+	}
+
+	&__column {
+		flex-grow: 1;
+	}
+
+	&__logo {
+		display: inline-block;
+		margin-inline: auto;
+	}
+
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__copyright {
+		padding-block: var(--space-100);
+		border-top: 1px solid hsl(var(--clr-neutral-400));
+	}
+}

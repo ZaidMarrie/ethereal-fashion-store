@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function OrdersPage() {
-	return <Layout>OrdersPage</Layout>;
+	return <div>OrdersPage</div>;
 }
 
 export default OrdersPage;

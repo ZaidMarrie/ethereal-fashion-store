@@ -36,12 +36,14 @@ picture {
 	display: block;
 }
 
+a,
 input,
 button,
 textarea,
 select {
 	font: inherit;
 	color: inherit;
+	display: inline-block;
 }
 
 textarea {

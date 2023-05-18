@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function WishlistPage() {
-	return <Layout>WishlistPage</Layout>;
+	return <div>WishlistPage</div>;
 }
 
 export default WishlistPage;

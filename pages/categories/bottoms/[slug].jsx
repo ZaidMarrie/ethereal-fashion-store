@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function BottomsProductPage() {
-	return <Layout>BottomsProductPage</Layout>;
+	return <div>BottomsProductPage</div>;
 }
 
 export default BottomsProductPage;

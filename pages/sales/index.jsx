@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function SalesPage() {
-	return <Layout>SalesPage</Layout>;
+	return <div>SalesPage</div>;
 }
 
 export default SalesPage;

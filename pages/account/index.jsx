@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function AccountPage() {
-	return <Layout>AccountPage</Layout>;
+	return <div>AccountPage</div>;
 }
 
 export default AccountPage;

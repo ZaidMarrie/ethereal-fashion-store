@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function RegistrationPage() {
-	return <Layout>RegistrationPage</Layout>;
+	return <div>RegistrationPage</div>;
 }
 
 export default RegistrationPage;

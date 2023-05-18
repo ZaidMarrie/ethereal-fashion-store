@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function CategoriesPage() {
-	return <Layout>CategoriesPage</Layout>;
+	return <div>CategoriesPage</div>;
 }
 
 export default CategoriesPage;

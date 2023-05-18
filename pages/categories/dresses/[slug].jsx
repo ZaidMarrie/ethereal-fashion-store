@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function DressProductPage() {
-	return <Layout>DressProductPage</Layout>;
+	return <div>DressProductPage</div>;
 }
 
 export default DressProductPage;

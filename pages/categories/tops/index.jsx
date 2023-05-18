@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function TopsPage() {
-	return <Layout>TopsPage</Layout>;
+	return <div>TopsPage</div>;
 }
 
 export default TopsPage;

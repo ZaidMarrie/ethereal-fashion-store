@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function DeliveryOptionsPage() {
-	return <Layout>DeliveryOptionsPage</Layout>;
+	return <div>DeliveryOptionsPage</div>;
 }
 
 export default DeliveryOptionsPage;

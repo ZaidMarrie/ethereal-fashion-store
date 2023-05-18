@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function ReturnsExchangesPage() {
-	return <Layout>ReturnsExchangesPage</Layout>;
+	return <div>ReturnsExchangesPage</div>;
 }
 
 export default ReturnsExchangesPage;

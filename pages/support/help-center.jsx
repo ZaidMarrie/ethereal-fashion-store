@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function HelpCenterPage() {
-	return <Layout>HelpCenterPage</Layout>;
+	return <div>HelpCenterPage</div>;
 }
 
 export default HelpCenterPage;

@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function PaymentOptionsPage() {
-	return <Layout>PaymentOptionsPage</Layout>;
+	return <div>PaymentOptionsPage</div>;
 }
 
 export default PaymentOptionsPage;

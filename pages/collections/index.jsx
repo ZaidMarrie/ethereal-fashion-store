@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function CollectionsPage() {
-	return <Layout>CollectionsPage</Layout>;
+	return <div>CollectionsPage</div>;
 }
 
 export default CollectionsPage;

@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function CoatsJacketsProductPage() {
-	return <Layout>CoatsJacketsProductPage</Layout>;
+	return <div>CoatsJacketsProductPage</div>;
 }
 
 export default CoatsJacketsProductPage;

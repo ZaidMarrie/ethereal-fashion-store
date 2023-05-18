@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function ShoesPage() {
-	return <Layout>ShoesPage</Layout>;
+	return <div>ShoesPage</div>;
 }
 
 export default ShoesPage;

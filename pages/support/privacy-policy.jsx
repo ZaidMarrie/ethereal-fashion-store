@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function PrivacyPolicyPage() {
-	return <Layout>PrivacyPolicyPage</Layout>;
+	return <div>PrivacyPolicyPage</div>;
 }
 
 export default PrivacyPolicyPage;

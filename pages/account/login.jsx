@@ -1,7 +1,5 @@
-import Layout from "@/components/global/Layout";
-
 function LoginPage() {
-	return <Layout>LoginPage</Layout>;
+	return <div>LoginPage</div>;
 }
 
 export default LoginPage;
