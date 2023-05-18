@@ -1,0 +1,27 @@
+// @use "../../../styles/abstract/functions" as *;
+// @use "../../../styles/abstract/breakpoints" as *;
+
+// ==================== Category Card ==================== //
+.card {
+	width: 250px;
+	height: 150px;
+	padding: var(--space-200);
+	background-color: hsl(var(--clr-neutral-200));
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+
+	&__image {
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+
+		& img {
+			object-fit: cover;
+		}
+	}
+
+	&__content {
+		font-weight: 700;
+	}
+}

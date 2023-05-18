@@ -6,8 +6,10 @@ import Carousel from "@/components/carousel/Carousel";
 import CarouselContextProvider from "@/context/CarouselContext";
 import ProductCard from "@/components/global/ProductCard";
 import bannerImage from "@/assets/images/banner-image-home.png";
-import styles from "@/styles/Home.module.scss";
+import CategoryCard from "@/components/global/CategoryCard";
 import SubscribeForm from "@/components/global/SubscribeForm";
+import categories from "@/data/categories";
+import styles from "@/styles/Home.module.scss";
 
 export default function HomePage({ featuredProducts }) {
 	return (
@@ -68,6 +70,12 @@ export default function HomePage({ featuredProducts }) {
 						>
 							Browse Categories
 						</h2>
+
+						<div className="flex flex-wrap justify-center">
+							{categories.map((category) => (
+								<CategoryCard key={category.id} category={category} />
+							))}
+						</div>
 					</section>
 
 					<SubscribeForm />
