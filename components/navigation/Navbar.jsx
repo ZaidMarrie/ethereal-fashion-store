@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useCartStore } from "@/state/cartStore";
 import { MdOutlineAccountCircle, MdOutlineShoppingBag } from "react-icons/md";
 import Link from "next/link";
 import MenuIcon from "./MenuIcon";
@@ -13,6 +14,8 @@ function Navbar() {
 	const [menuExpanded, setMenuExpanded] = useState(false);
 	const [accountOpen, setAccountOpen] = useState(false);
 	const [cartOpen, setCartOpen] = useState(false);
+
+	const cartItemCount = useCartStore((state) => state.cart).length;
 
 	const toggleMenu = () => setMenuExpanded((prevState) => !prevState);
 	const toggleAccount = () => setAccountOpen((prevState) => !prevState);
@@ -55,7 +58,7 @@ function Navbar() {
 					>
 						<MdOutlineShoppingBag />
 						<span className="sr-only">My Cart</span>
-						<Badge count={3} />
+						{cartItemCount > 0 && <Badge count={cartItemCount} />}
 					</IconButton>
 
 					<CartDialog isCartOpen={cartOpen} />

@@ -11,7 +11,10 @@ function Footer() {
 			<div className={`${styles.footer__wrapper} grid`}>
 				<div className={`${styles.footer__column}`}>
 					<div className={`${styles.footer__logo}`}>
-						<Logo color="white" />
+						<Link href="/">
+							<Logo color="white" />
+							<span className="sr-only">Go to Homepage</span>
+						</Link>
 					</div>
 					<p>Shop the latest fashion trends.</p>
 					<p>Your favorite destination for ethical fashion.</p>

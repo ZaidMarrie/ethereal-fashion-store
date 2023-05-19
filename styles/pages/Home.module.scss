@@ -3,6 +3,7 @@
 
 // ==================== Home Page ==================== //
 .banner {
+	--gap: var(--space-500);
 	--space: min(-2.125rem, 100% - -80.625rem);
 
 	padding: 0;
@@ -16,10 +17,10 @@
 
 	&__image {
 		position: relative;
-		height: 100%;
+		height: rem(200);
 
 		@include breakpoint(medium) {
-			transform: translateX(var(--space));
+			height: 100%;
 		}
 
 		& > img {
@@ -28,7 +29,11 @@
 	}
 
 	&__content {
-		padding: var(--space-700) var(--space-400);
+		padding: 0 var(--space-400);
+
+		@include breakpoint(medium) {
+			padding-block: var(--space-700);
+		}
 
 		& > * + * {
 			margin-top: var(--space-500);

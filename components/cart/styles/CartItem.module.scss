@@ -14,15 +14,20 @@
 		--gap: var(--space-300);
 	}
 
-	&__header a {
-		font-size: rem(16);
-		font-weight: 700;
-		line-height: 1.1;
+	&__header {
+		grid-template-columns: 1fr auto;
+
+		a {
+			font-size: rem(16);
+			font-weight: 700;
+			line-height: 1.1;
+		}
 	}
 
 	&__button {
 		aspect-ratio: 1;
 		padding: var(--space-100);
+		width: calc(25px + var(--space-100));
 	}
 
 	&__details {

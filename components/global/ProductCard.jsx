@@ -1,13 +1,29 @@
 import { useState } from "react";
+import { useCartStore } from "@/state/cartStore";
 import { urlForImage } from "@/sanity/image";
 import { HiOutlineHeart, HiHeart } from "react-icons/hi";
 import { MdAddShoppingCart } from "react-icons/md";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles/ProductCard.module.scss";
-import Link from "next/link";
 
 function ProductCard({ product }) {
 	const [wishlisted, setWishlisted] = useState(false);
+
+	const cart = useCartStore((state) => state.cart);
+	const addToCart = useCartStore((state) => state.addToCart);
+	const increaseQuantity = useCartStore((state) => state.increaseQuantity);
+
+	const handleCartAdd = () => {
+		const cartHasProduct = cart.some((item) => item._id === product._id);
+
+		if (!cartHasProduct) {
+			addToCart({ ...product, quantity: 1 });
+			return;
+		}
+
+		increaseQuantity(product._id);
+	};
 
 	return (
 		<div className={`${styles.card} rounded-300 flex flex-column`}>
@@ -66,7 +82,10 @@ function ProductCard({ product }) {
 						)}
 					</div>
 
-					<button className={`${styles.card__button} rounded-100`}>
+					<button
+						className={`${styles.card__button} rounded-100`}
+						onClick={handleCartAdd}
+					>
 						<div className="sr-only">Add To Cart</div>
 						<MdAddShoppingCart size={28} color="hsl(var(--clr-neutral-100)" />
 					</button>
