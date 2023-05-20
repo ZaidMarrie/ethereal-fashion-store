@@ -38,6 +38,7 @@ function ProductCard({ product }) {
 			<div className={`${styles.card__wrapper}`}>
 				<h3 className={`${styles.card__title} fs-500`}>
 					<Link
+						className="capitalize"
 						href={`/categories/${product.category}/${product.slug.current}`}
 					>
 						{product.name}

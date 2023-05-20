@@ -1,4 +1,5 @@
 import { client } from "@/sanity/client";
+import Link from "next/link";
 import Image from "next/image";
 import Meta from "@/components/global/Meta";
 import Carousel from "@/components/carousel/Carousel";
@@ -57,7 +58,9 @@ export default function HomePage({ featuredProducts }) {
 							Nihil neque dolorem, maxime cupiditate aut est.
 						</p>
 
-						<button className="button">Shop By Collection</button>
+						<Link className="button" href="/collections">
+							Shop By Collection
+						</Link>
 					</div>
 				</section>
 

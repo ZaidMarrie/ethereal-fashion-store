@@ -17,6 +17,77 @@ section {
 	padding-block: var(--space-700);
 }
 
+// ==================== Margin Utility Classes ==================== //
+.mx-auto {
+	margin-inline: auto;
+}
+.mt {
+	&-0 {
+		margin-top: 0;
+	}
+	&-100 {
+		margin-top: var(--space-100);
+	}
+	&-200 {
+		margin-top: var(--space-200);
+	}
+	&-300 {
+		margin-top: var(--space-300);
+	}
+	&-400 {
+		margin-top: var(--space-400);
+	}
+	&-500 {
+		margin-top: var(--space-500);
+	}
+	&-600 {
+		margin-top: var(--space-600);
+	}
+	&-700 {
+		margin-top: var(--space-700);
+	}
+	&-800 {
+		margin-top: var(--space-800);
+	}
+	&-900 {
+		margin-top: var(--space-900);
+	}
+}
+
+// ==================== Padding Utility Classes ==================== //
+.pt {
+	&-0 {
+		padding-top: 0;
+	}
+	&-100 {
+		padding-top: var(--space-100);
+	}
+	&-200 {
+		padding-top: var(--space-200);
+	}
+	&-300 {
+		padding-top: var(--space-300);
+	}
+	&-400 {
+		padding-top: var(--space-400);
+	}
+	&-500 {
+		padding-top: var(--space-500);
+	}
+	&-600 {
+		padding-top: var(--space-600);
+	}
+	&-700 {
+		padding-top: var(--space-700);
+	}
+	&-800 {
+		padding-top: var(--space-800);
+	}
+	&-900 {
+		padding-top: var(--space-900);
+	}
+}
+
 // ==================== Border Radius Utility Classes ==================== //
 .rounded {
 	&-100 {
